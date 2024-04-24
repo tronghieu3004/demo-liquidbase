@@ -1,6 +1,7 @@
 services:
-  mysql:
+  db:
     image: 'mysql:8.0.36-debian'
+    container_name: mysql
     environment:
       - 'MYSQL_DATABASE=dev'
       - 'MYSQL_PASSWORD=admin'
