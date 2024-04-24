@@ -4,7 +4,7 @@ services:
     environment:
       - MYSQL_DATABASE=dev
       - MYSQL_PASSWORD=admin
-      - MYSQL_ROOT_PASSWORD=roo
+      - MYSQL_ROOT_PASSWORD=root
       - MYSQL_USER=admin
     ports:
       - '3306:3306'
