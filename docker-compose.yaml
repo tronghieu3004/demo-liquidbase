@@ -2,13 +2,13 @@ services:
   mysql:
     image: 'mysql:latest'
     environment:
-      - MYSQL_DATABASE=dev
-      - MYSQL_PASSWORD=admin
-      - MYSQL_ROOT_PASSWORD=root
-      - MYSQL_USER=admin
+      - 'MYSQL_DATABASE=dev'
+      - 'MYSQL_PASSWORD=admin'
+      - 'MYSQL_ROOT_PASSWORD=root'
+      - 'MYSQL_USER=admin'
     ports:
       - '3306:3306'
       volumes:
-        - demo-mysql-data:/var/lib/mysql
+        - 'demo-mysql-data:/var/lib/mysql'
 volumes:
   demo-mysql-data:
