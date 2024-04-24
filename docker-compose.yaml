@@ -1,6 +1,6 @@
 services:
   mysql:
-    image: 'mysql:latest'
+    image: 'mysql:8.0.36-debian'
     environment:
       - 'MYSQL_DATABASE=dev'
       - 'MYSQL_PASSWORD=admin'
@@ -8,7 +8,3 @@ services:
       - 'MYSQL_USER=admin'
     ports:
       - '3306:3306'
-    volumes:
-      - 'demo-mysql-data:/var/lib/mysql'
-volumes:
-  demo-mysql-data:
